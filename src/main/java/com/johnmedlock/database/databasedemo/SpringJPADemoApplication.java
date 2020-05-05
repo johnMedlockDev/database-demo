@@ -1,7 +1,5 @@
 package com.johnmedlock.database.databasedemo;
 
-import com.johnmedlock.database.databasedemo.entity.Person;
-import com.johnmedlock.database.databasedemo.jdbc.PersonJdbcDao;
 import com.johnmedlock.database.databasedemo.jpa.PersonJpaRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,8 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.Date;
 
 @SpringBootApplication
 public class SpringJPADemoApplication implements CommandLineRunner {
