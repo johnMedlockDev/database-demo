@@ -1,12 +1,15 @@
 package com.johnmedlock.database.databasedemo.entity;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import java.util.Date;
 
 // person bean = model
 
 @Entity
-@NamedQuery(name="find_all_persons", query = "select p from Person p")
+@NamedQuery(name = "find_all_persons", query = "select p from Person p")
 public class Person {
 
     @Id
